@@ -1,0 +1,21 @@
+#landingPageHook {
+  width: 95vw;
+  position: relative;
+  left: calc(-47.5vw + 50%);
+  overflow: hidden;
+  height: 700px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: url("../images/jay-soni-omgclJdKf1I-unsplash.jpg");
+  background-position-x: left;
+  background-position-y: top;
+  box-shadow: 0px 0px 10px 10px #ffffff inset;
+  background-size: cover;
+  margin-top: 20px;
+}
+
+#informationThirds p {
+  display: flex;
+  flex-basis: 33%;
+  flex-direction: row;
+}
