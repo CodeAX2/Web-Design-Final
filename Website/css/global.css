@@ -1,20 +1,22 @@
+.fullWidthObject{
+  overflow: hidden;
+  width: 100vw;
+  overflow-x:hidden;
+}
+
 .fullNavigation {
   padding-bottom: 10px;
   padding-top: 10px;
   position: sticky;
   top: 0;
   background-color: #ffffff;
-  overflow: hidden;
   z-index: 1000;
-  width: 98vw;
-  margin-left: calc(-1 * (98vw - 1000px) / 2);
-  max-width: 100vw;
-  padding: 10px calc((98vw - 1000px) / 2);
-  box-sizing: border-box;
+  padding: 10px calc((100vw - 1000px) / 2);
+  margin-left: calc(-1 * (100vw - 1000px) / 2);
+  max-width: 100%;
 }
 
 .mainNavigation {
-  margin: 0 0;
   width: 75%;
   align-self: center;
   margin-left: 5px;
@@ -31,7 +33,7 @@
   display: inline-block;
   font-size: 14px;
   text-align: center;
-  width: 16%;
+  width: 16.55%;
 }
 
 .mainNavigation ul li:hover {
@@ -63,6 +65,7 @@
 body {
   width: 1000px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 p {
@@ -89,4 +92,80 @@ h1 {
 
 .flexContainer {
   display: flex;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.fullFooter{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #ffffff;
+  border: 3px solid black;
+
+  padding: 10px calc((100vw - 1000px) / 2);
+  margin-left: calc(-1 * (100vw - 1000px) / 2);
+  max-width: 100%;
+
+}
+
+.fullFooter div div { /* Controls each of the flex boxes */
+
+  margin:0 20px;
+
+}
+
+.footerLogoLink{
+  flex-basis: 20%;
+}
+
+.footerLogoImage {
+  width: 100%;
+}
+
+.footerSocialMedia{
+  flex-basis: 40%;
+}
+
+.footerNavigation {
+  flex-basis: 40%;
+  align-self:center;
+}
+
+.footerNavigation ul {
+  list-style: none;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0px;
+}
+
+.footerNavigation ul li {
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+  width:16%;
+}
+
+.footerNavigation ul li:hover {
+  border-bottom: 3px solid #4b4b4b !important;
+}
+
+.footerNavigation ul li:hover a {
+  color:#47727e;
+}
+
+.footerNavigation ul li a {
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #4b4b4b;
 }

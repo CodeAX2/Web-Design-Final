@@ -14,20 +14,11 @@
   margin-top: 20px;
 }
 
-#informationThirds, #reviews{
-  display: flex;
-  flex-direction: row;
-}
-
 #informationThirds div {
   flex-basis: 33%;
-  box-sizing: border-box;
-  margin:5px 5px;
 }
 
 #indexProductImages{
-  display: flex;
-  flex-direction: row;
   height:1000px;
 }
 
@@ -40,11 +31,6 @@
   object-fit: cover;
   box-sizing: border-box;
   padding: 5px 5px;
-}
-
-#leftIndexProductImages{
-  display:flex;
-  flex-direction: column;
 }
 
 #leftIndexProductImages img {
@@ -62,8 +48,6 @@
 
 #reviews div {
   flex-basis: 50%;
-  box-sizing: border-box;
-  margin:5px 5px;
 }
 
 
