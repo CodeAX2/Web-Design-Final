@@ -14,7 +14,7 @@
   margin-top: 20px;
 }
 
-#informationThirds {
+#informationThirds, #reviews{
   display: flex;
   flex-direction: row;
 }
@@ -23,30 +23,23 @@
   flex-basis: 33%;
   box-sizing: border-box;
   margin:5px 5px;
-  border: 1px solid grey;
-}
-
-#informationThirds div h1 {
-  text-align: center;
-  border-bottom: 1px solid gray;
-}
-
-#informationThirds div p {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 #indexProductImages{
   display: flex;
   flex-direction: row;
+  height:1000px;
 }
 
 #leftIndexProductImages, #rightIndexProductImages {
   flex-basis: 50%;
 }
 
-#leftIndexProductImages div img, #rightIndexProductImages img{
+#leftIndexProductImages img, #rightIndexProductImages img{
   width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  padding: 5px 5px;
 }
 
 #leftIndexProductImages{
@@ -54,12 +47,23 @@
   flex-direction: column;
 }
 
-#leftIndexProductImages div{
+#leftIndexProductImages img {
+  flex-basis: 50%;
+  height:50%;
+}
+
+#productImage1 {
+  object-position: 0 20%;
+}
+
+#rightIndexProductImages img {
   height:100%;
 }
 
-#leftIndexProductImages div img {
+#reviews div {
   flex-basis: 50%;
+  box-sizing: border-box;
+  margin:5px 5px;
 }
 
 

@@ -3,7 +3,7 @@
   padding-top: 10px;
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: #ffffff;
   overflow: hidden;
   z-index: 1000;
   width: 98vw;
@@ -35,7 +35,11 @@
 }
 
 .mainNavigation ul li:hover {
-  background-color: aqua;
+  border-bottom: 3px solid #4b4b4b !important;
+}
+
+.mainNavigation ul li:hover a {
+  color:#47727e;
 }
 
 .mainNavigation ul li:not(:first-child) {
@@ -43,7 +47,7 @@
   border-color: #4b4b4b;
   border-left-width: 1px;
   border-top-width: 0px;
-  border-bottom-width: 0px;
+  border-bottom: 3px solid transparent;
   border-right-width: 0px;
 }
 
@@ -53,7 +57,7 @@
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: black;
+  color: #4b4b4b;
 }
 
 body {
@@ -63,6 +67,13 @@ body {
 
 p {
   font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+
+h1 {
+  text-align: center;
 }
 
 .headerLogoLink {
