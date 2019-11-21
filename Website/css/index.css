@@ -1,15 +1,7 @@
 #landingPageHook {
-  width: 100vw;
-  position: relative;
-  left: calc(-50vw + 50%);
-  overflow: hidden;
-  height: 700px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   background-image: url("../images/jay-soni-omgclJdKf1I-unsplash.jpg");
   background-position-x: left;
   background-position-y: 20px;
-  background-size: cover;
 }
 
 #informationThirds div {

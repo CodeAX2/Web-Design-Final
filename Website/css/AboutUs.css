@@ -1,0 +1,24 @@
+#aboutUsHook {
+  background-image: url("../images/womenFacingBackwards.jpg");
+  background-position-x: left;
+  background-position-y: top;
+}
+
+.employeeInfo {
+  flex-basis: 33%;
+  width: 300px;
+  text-align: center;
+}
+
+.employeeImage {
+  border-radius: 50%;
+  width: 50%;
+  object-fit: cover;
+}
+
+#aboutUsHook h1 {
+  color: white;
+  line-height: 700px;
+  font-size: 120px;
+  margin: 0 0;
+}
