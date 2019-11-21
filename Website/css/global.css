@@ -191,3 +191,9 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.heroImageTitle{
+  line-height: 700px;
+  font-size: 120px;
+  margin: 0 0;
+}
