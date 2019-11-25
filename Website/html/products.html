@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Products</title>
@@ -42,21 +42,51 @@
 
     <div class="slideshow">
 
-        <div class="slide">
-            <img src="../images/JeansInARow.jpg">
-            <h1>Caption</h1>
-        </div>
-        <div class="slide">
-            <img src="../images/waldemar-brandt-UP9DtTjRYpI-unsplash.jpg">
-            <h1>Caption</h1>
-        </div>
-        <div class="slide">
-            <img src="../images/lan-deng-quddu_dZKkQ-unsplash.jpg">
-            <h1>Caption</h1>
+        <div class="slideContent">
+
+            <div class="slide">
+                <img src="../images/JeansInARow.jpg" class="slideImage" alt="Jeans lined up in a row">
+                <div class="slideCaption">Product 1 Information</div>
+            </div>
+            <div class="slide">
+                <img src="../images/waldemar-brandt-UP9DtTjRYpI-unsplash.jpg" class="slideImage" alt="Jeans stacked in piles">
+                <div class="slideCaption">Product 2 Information</div>
+            </div>
+            <div class="slide">
+                <img src="../images/lan-deng-quddu_dZKkQ-unsplash.jpg" class="slideImage" alt="Jeans hanging from racks">
+                <div class="slideCaption">Product 3 Information</div>
+            </div>
+            <div class="slide">
+                <img src="../images/artem-beliaikin-eE5jo8wyNsU-unsplash.jpg" class="slideImage" alt="Products on clothes hangers">
+                <div class="slideCaption">Product 4 Information</div>
+            </div>
+
+            <a class="slideNext" onclick="incrimentSlide()">&#10095;</a>
+            <a class="slidePrev" onclick="decrementSlide()">&#10094;</a>
+
         </div>
 
+        <div class="slideDotsContainer">
+            <!--Populated by javascript-->
+        </div>
 
     </div>
+
+    <h1>
+        Sales
+    </h1>
+
+    <h1>
+        Men's Apparel
+    </h1>
+
+    <h1>
+        Women's Apparel
+    </h1>
+
+    <h1>
+        Children's Apparel
+    </h1>
 
 
     <footer class="fullFooter fullWidthObject flexRow">
