@@ -1,5 +1,8 @@
 var currentSlide = 0;
 var numSlides = 0;
+var autoIncriment = true;
+var autoIncrimentTime = 3000;
+var autoIncrimentTimeCooldown = 10000;
 
 document.addEventListener("DOMContentLoaded",
 
@@ -7,6 +10,7 @@ document.addEventListener("DOMContentLoaded",
         setNumberOfSlides();
         populateDots();
         displaySlide(currentSlide);
+        setInterval(incrimentSlideByAuto, autoIncrimentTime);
     }
 );
 
@@ -17,7 +21,7 @@ function displaySlide(slideIndex) {
 
     for (var i = 0; i < numSlides; i++) {
         allSlides[i].style.display = "none";
-        if (i == slideIndex){
+        if (i == slideIndex) {
             allDots[i].classList.add("activeSlideDot");
         } else {
             allDots[i].classList.remove("activeSlideDot");
@@ -25,10 +29,11 @@ function displaySlide(slideIndex) {
     };
 
     allSlides[slideIndex].style.display = "block";
+    currentSlide = slideIndex;
 
 }
 
-function setNumberOfSlides(){
+function setNumberOfSlides() {
     var allSlides = document.getElementsByClassName("slide");
     numSlides = allSlides.length;
 }
@@ -45,9 +50,39 @@ function decrementSlide() {
     displaySlide(currentSlide);
 }
 
+function displaySlideByClick(slideIndex) {
+    autoIncriment = false;
+    displaySlide(slideIndex);
+}
+
+function incrimentSlideByClick() {
+    autoIncriment = false;
+    incrimentSlide();
+}
+
+function decrementSlideByClick() {
+    autoIncriment = false;
+    decrementSlide();
+}
+
 function populateDots() {
     var dotsContainer = document.getElementsByClassName("slideDotsContainer")[0];
     for (var i = 0; i < numSlides; i++) {
-        dotsContainer.innerHTML += '<div class="slideDot" onclick="displaySlide(' + i + ')"></div>';
+        dotsContainer.innerHTML += '<div class="slideDot" onclick="displaySlideByClick(' + i + ')"></div>';
+    }
+}
+
+
+var timeSinceAutoStop = 0;
+function incrimentSlideByAuto() {
+    if (timeSinceAutoStop >= autoIncrimentTimeCooldown) {
+        autoIncriment = true;
+        timeSinceAutoStop = 0;
+    }
+
+    if (autoIncriment) {
+        incrimentSlide();
+    } else {
+        timeSinceAutoStop += autoIncrimentTime;
     }
 }
