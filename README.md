@@ -10,3 +10,5 @@ TODO:
 - [ ] Finish products.html
 - [ ] Maybe revamp header nav bar and footer nav bar
 - [ ] Maybe add more images to the slideshow on products.html
+- [ ] Remove extra pictures in images folder
+- [ ] Rename images in images folder to not be gibberish
