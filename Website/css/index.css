@@ -39,5 +39,9 @@
 #reviews div {
   flex-basis: 50%;
 }
-
-
+h1{
+  font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-family: 'Playfair Display', serif;
+}
