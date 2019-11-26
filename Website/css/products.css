@@ -2,12 +2,20 @@
   height: 600px;
 }
 
-.productImages div {
+.productImages div,
+.productImagesSmaller div {
   padding: 5px 5px;
+  height: 100%;
+  box-sizing: border-box;
 }
 
-.productImages div img {
+.productImages div img,
+.productImagesSmaller div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.productImagesSmaller {
+  height: 475px;
 }
