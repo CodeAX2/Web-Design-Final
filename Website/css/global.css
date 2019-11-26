@@ -71,13 +71,15 @@ body {
 
 p {
   font-size: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Playfair Display', serif;
   
 }
 
-h1 {
+h1, h2 {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .headerLogoLink {
@@ -296,3 +298,15 @@ h1 {
   background-color: #6d6d6d !important;
 }
 
+.horizontalHalf, .horizontalThird {
+  display: flex;
+  flex-direction: row;
+}
+
+.horizontalHalf div {
+  flex-basis: 50%;
+}
+
+.horizontalThird div {
+  flex-basis: 33%;
+}
