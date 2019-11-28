@@ -1,6 +1,14 @@
+/*
+
+Many of the fullWidth objects are actually controlled
+by Javascript, since using 100vw includes the scrollbar
+and would cause horizontal scrolling
+
+*/
+
+
 .fullWidthObject {
   overflow: hidden;
-  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -11,8 +19,6 @@
   top: 0;
   background-color: #ffffff;
   z-index: 1000;
-  padding: 10px calc((100vw - 1000px) / 2);
-  margin-left: calc(-1 * (100vw - 1000px) / 2);
   max-width: 100%;
 }
 
@@ -66,7 +72,6 @@
 body {
   width: 1000px;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 
 p {
@@ -113,9 +118,6 @@ h2 {
   padding-top: 10px;
   background-color: #ffffff;
   border-top: 3px solid #000000;
-
-  padding: 10px calc((100vw - 1000px) / 2);
-  margin-left: calc(-1 * (100vw - 1000px) / 2);
   max-width: 100%;
 
   justify-content: center;
@@ -188,9 +190,7 @@ h2 {
 }
 
 .heroImage {
-  width: 100vw;
   position: relative;
-  left: calc(-50vw + 50%);
   overflow: hidden;
   height: 700px;
   background-attachment: fixed;
@@ -265,15 +265,15 @@ h2 {
 
 .slideNext {
   right: 0;
-  padding-right: 18px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 15px;
   border-radius: 6px 0 0 6px;
 }
 
 .slidePrev {
   left: 0;
-  padding-right: 20px;
-  padding-left: 18px;
+  padding-right: 15px;
+  padding-left: 10px;
   border-radius: 0 6px 6px 0;
 }
 
