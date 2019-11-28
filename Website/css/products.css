@@ -1,0 +1,28 @@
+.productImages {
+  height: 600px;
+}
+
+.productImages div,
+.productImagesSmaller div {
+  padding: 5px 5px;
+  height: 100%;
+  box-sizing: border-box;
+  transition: padding .15s;
+}
+
+.productImages div:hover,
+.productImagesSmaller div:hover {
+  padding: 0px 0px;
+  transition: padding .25s;
+}
+
+.productImages img,
+.productImagesSmaller img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productImagesSmaller {
+  height: 475px;
+}
