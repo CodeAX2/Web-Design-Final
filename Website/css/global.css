@@ -6,12 +6,6 @@ and would cause horizontal scrolling
 
 */
 
-
-.fullWidthObject {
-  overflow: hidden;
-  overflow-x: hidden;
-}
-
 .fullNavigation {
   padding-bottom: 10px;
   padding-top: 10px;
@@ -37,17 +31,18 @@ and would cause horizontal scrolling
 
 .mainNavigation ul li {
   display: inline-block;
-  font-size: 14px;
   text-align: center;
   width: 16.55%;
 }
 
-.mainNavigation ul li:hover {
+.mainNavigation ul li:hover,
+.currentPageNavItem {
   border-bottom: 3px solid #4b4b4b !important;
 }
 
-.mainNavigation ul li:hover a {
-  color: #47727e;
+.mainNavigation ul li:hover a,
+.currentPageNavItem a {
+  color: #47727e !important;
 }
 
 .mainNavigation ul li:not(:first-child) {
@@ -61,30 +56,12 @@ and would cause horizontal scrolling
 
 .mainNavigation ul li a {
   text-decoration: none;
-  margin: 0 auto;
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
   color: #4b4b4b;
-  font-family: "Playfair Display", serif;
-}
-
-body {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-p {
-  font-size: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-family: "Playfair Display", serif;
-}
-
-h1,
-h2 {
-  text-align: center;
   font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 20px 5px;
 }
 
 .headerLogoLink {
@@ -96,7 +73,30 @@ h2 {
 
 .headerLogoImage {
   width: 100%;
-  height:100%
+  height: 100%;
+}
+
+body {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fullWidthObject {
+  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .flexContainer {
@@ -111,6 +111,24 @@ h2 {
 .flexCol {
   display: flex;
   flex-direction: column;
+}
+
+.horizontalHalf,
+.horizontalThird {
+  display: flex;
+  flex-direction: row;
+}
+
+.horizontalHalf div {
+  flex-basis: 50%;
+}
+
+.horizontalThird div {
+  flex-basis: 33%;
+}
+
+.imageAlignedTop {
+  object-position: 0 0;
 }
 
 .fullFooter {
@@ -177,7 +195,8 @@ h2 {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #4b4b4b;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 .fullSocialMedia {
@@ -256,7 +275,7 @@ h2 {
   position: absolute;
   top: 50%;
   font-size: 36px;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
   cursor: pointer;
   user-select: none;
   background-color: unset;
@@ -301,22 +320,4 @@ h2 {
 
 .activeSlideDot {
   background-color: #6d6d6d !important;
-}
-
-.horizontalHalf,
-.horizontalThird {
-  display: flex;
-  flex-direction: row;
-}
-
-.horizontalHalf div {
-  flex-basis: 50%;
-}
-
-.horizontalThird div {
-  flex-basis: 33%;
-}
-
-.imageAlignedTop {
-  object-position: 0 0;
 }

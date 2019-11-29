@@ -15,3 +15,8 @@
   width: 50%;
   object-fit: cover;
 }
+
+#employeesLine1,
+#employeesLine2 {
+  margin-top: 40px;
+}

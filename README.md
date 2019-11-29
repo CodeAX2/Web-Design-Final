@@ -6,10 +6,11 @@ TODO:
 - [ ] Replace dummy text
 - [X] Find better fonts
 - [X] Possibly adjust how text is layed out
-- [ ] Replace alt tags in images on aboutUs.html with the names of the employees
+- [X] Replace alt tags in images on aboutUs.html with the names of the employees
 - [X] Finish products.html layout
-- [ ] Maybe revamp header nav bar and footer nav bar
-- [ ] Remove extra pictures in images folder
-- [ ] Rename images in images folder to not be gibberish
-- [ ] Fix issue with the validator not liking the font
-- [ ] Clean up code
+- [X] Maybe revamp header nav bar and footer nav bar
+- [X] Remove extra pictures in images folder
+- [X] Rename images in images folder to not be gibberish
+- [X] Fix issue with the validator not liking the font
+- [X] Clean up code
+- [ ] Check that everything is good according to the rubric

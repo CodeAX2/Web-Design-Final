@@ -1,18 +1,20 @@
 #landingPageHook {
-  background-image: url("../images/jay-soni-omgclJdKf1I-unsplash.jpg");
+  background-image: url("../images/manSittingOutsideInJeans.jpg");
   background-position-x: left;
   background-position-y: 20px;
 }
 
-#indexProductImages{
-  height:1000px;
+#indexProductImages {
+  height: 1000px;
 }
 
-#leftIndexProductImages, #rightIndexProductImages {
+#leftIndexProductImages,
+#rightIndexProductImages {
   flex-basis: 50%;
 }
 
-#leftIndexProductImages img, #rightIndexProductImages img{
+#leftIndexProductImages img,
+#rightIndexProductImages img {
   width: 100%;
   object-fit: cover;
   box-sizing: border-box;
@@ -21,7 +23,7 @@
 
 #leftIndexProductImages img {
   flex-basis: 50%;
-  height:50%;
+  height: 50%;
 }
 
 #productImage1 {
@@ -29,5 +31,5 @@
 }
 
 #rightIndexProductImages img {
-  height:100%;
+  height: 100%;
 }

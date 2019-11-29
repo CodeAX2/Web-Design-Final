@@ -7,13 +7,13 @@
   padding: 5px 5px;
   height: 100%;
   box-sizing: border-box;
-  transition: padding .15s;
+  transition: padding 0.15s;
 }
 
 .productImages div:hover,
 .productImagesSmaller div:hover {
   padding: 0px 0px;
-  transition: padding .25s;
+  transition: padding 0.25s;
 }
 
 .productImages img,
