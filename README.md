@@ -3,7 +3,7 @@ Final project for Web Design
 
 
 TODO:
-- [ ] Replace dummy text
+- [X] Replace dummy text
 - [X] Find better fonts
 - [X] Possibly adjust how text is layed out
 - [X] Replace alt tags in images on aboutUs.html with the names of the employees
