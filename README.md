@@ -14,4 +14,6 @@ TODO:
 - [X] Fix issue with the validator not liking the font
 - [X] Clean up code
 - [X] Add clicking on headers on products page
-- [ ] Check that everything is good according to the rubric
+- [X] Change color of social media icons
+- [X] Check that everything is good according to the rubric
+- [ ] Final check

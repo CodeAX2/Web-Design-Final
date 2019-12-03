@@ -94,6 +94,14 @@ h2 {
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  color: #000000;
+}
+
+a:visited {
+  color: #000000;
+}
+
 .fullWidthObject {
   overflow: hidden;
   overflow-x: hidden;
@@ -143,8 +151,6 @@ h2 {
 }
 
 .footerItem {
-  /* Controls each of the flex boxes */
-
   margin: 0 20px;
   align-self: center;
 }
@@ -206,6 +212,11 @@ h2 {
 .leftSocialMedia,
 .rightSocialMedia {
   margin: 0 0;
+}
+
+.fullSocialMedia a {
+  height: 64px;
+  width: 64px;
 }
 
 .heroImage {
