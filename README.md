@@ -13,4 +13,5 @@ TODO:
 - [X] Rename images in images folder to not be gibberish
 - [X] Fix issue with the validator not liking the font
 - [X] Clean up code
+- [X] Add clicking on headers on products page
 - [ ] Check that everything is good according to the rubric
